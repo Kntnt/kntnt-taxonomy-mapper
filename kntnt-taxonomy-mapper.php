@@ -20,7 +20,4 @@ defined( 'WPINC' ) || die;
 
 require_once __DIR__ . '/classes/class-plugin.php';
 
-new Plugin( [
-	//'index' => [  ],
-	'admin' => [ 'Settings', 'Mapper' ],
-] );
+new Plugin( [ 'admin' => [ 'Settings', 'Mapper' ] ] );
