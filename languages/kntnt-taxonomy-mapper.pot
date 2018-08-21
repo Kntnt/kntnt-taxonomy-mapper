@@ -1,0 +1,47 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kntnt's Taxonomy Mapper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-21 20:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: classes/class-settings.php:22
+msgid ""
+"Enter a JSON object which consists of key/value-pairs where each key is the "
+"name of a source taxonomy and each value is another JSON object, which "
+"consists of key/value-pairs where each key is the name of a term in the "
+"source taxonomy and each value is another JSON object, which consists of "
+"key/value-pairs where each key is the name of a destination taxonomy and "
+"each value is a JSON array, which consists of the names of terms in the "
+"destination taxonomy. This describes a relationship from terms in the source "
+"taxonomies to terms in the destination taxonomies. Every time a specified "
+"term in the source taxonomy is added to or deleted from a post, the mapped "
+"taxonomies will be updated accordingly to the map. The same taxonomy must "
+"not be used both as source and destination as that can result in an infinite "
+"loop."
+msgstr ""
+
+#. Name of the plugin
+msgid "Kntnt's Taxonomy Mapper"
+msgstr ""
+
+#. Description of the plugin
+msgid "Maps terms of a taxonomy to terms of other taxonomies."
+msgstr ""
+
+#: classes/class-settings.php:21
+msgid "Taxonomy map"
+msgstr ""
+
+#: classes/class-settings.php:11
+msgid "Taxonomy Mapper"
+msgstr ""
