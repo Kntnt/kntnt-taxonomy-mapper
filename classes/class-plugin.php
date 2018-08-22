@@ -43,11 +43,13 @@ class Plugin {
 
 		// Install script runs only on install (not activation).
 		// Uninstall script runs "magically" on uninstall.
-		register_activation_hook( self::$plugin_dir . '/' . self::$ns . '.php', function () {
-			if ( null === get_option( self::$ns, null ) ) {
-				require_once self::$plugin_dir . '/install.php';
-			}
-		} );
+		if ( is_readable( self::$plugin_dir . '/install.php' ) ) {
+			register_activation_hook( self::$plugin_dir . '/' . self::$ns . '.php', function () {
+				if ( null === get_option( self::$ns, null ) ) {
+					require_once self::$plugin_dir . '/install.php';
+				}
+			} );
+		}
 
 		// Setup localization.
 		add_action( 'plugins_loaded', function () {
