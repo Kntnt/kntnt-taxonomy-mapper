@@ -6,12 +6,23 @@ require_once __DIR__ . '/class-abstract-settings.php';
 
 class Settings extends Abstract_Settings {
 
-	// Returns title used as menu item and as head of settings page.
-	protected function title() {
+	/**
+	 * Returns the settings menu title.
+	 */
+	protected function menu_title() {
 		return __( 'Taxonomy Mapper', 'kntnt-taxonomy-mapper' );
 	}
 
-	// Returns all fields used on the settings page.
+	/**
+	 * Returns the settings page title.
+	 */
+	protected function page_title() {
+		return __( 'Kntnt\'s Taxonomy Mapper', 'kntnt-taxonomy-mapper' );
+	}
+
+	/**
+	 * Returns all fields used on the settings page.
+	 */
 	protected function fields() {
 
 		$fields['map'] = [

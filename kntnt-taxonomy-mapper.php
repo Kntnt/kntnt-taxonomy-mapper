@@ -18,6 +18,21 @@ namespace Kntnt\Taxonomy_Mapper;
 
 defined( 'WPINC' ) || die;
 
-require_once __DIR__ . '/classes/class-plugin.php';
+require_once __DIR__ . '/classes/class-abstract-plugin.php';
 
-new Plugin( [ 'admin' => [ 'Settings', 'Mapper' ] ] );
+class Plugin extends Abstract_Plugin {
+
+	public function classes_to_load() {
+
+		return [
+			'admin' => [
+				'init' => [
+					'Settings',
+					'Mapper',
+				],
+			],
+		];
+
+	}
+
+}
