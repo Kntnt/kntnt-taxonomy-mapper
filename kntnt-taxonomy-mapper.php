@@ -4,8 +4,9 @@
  * @wordpress-plugin
  * Plugin Name:       Kntnt's Taxonomy Mapper
  * Plugin URI:        https://github.com/Kntnt/kntnt-taxonomy-mapper
+ * GitHub Plugin URI: https://github.com/Kntnt/kntnt-taxonomy-mapper
  * Description:       Maps terms of a taxonomy to terms of other taxonomies.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Thomas Barregren
  * Author URI:        https://www.kntnt.com/
  * License:           GPL-3.0+
