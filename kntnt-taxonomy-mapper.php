@@ -36,3 +36,5 @@ class Plugin extends Abstract_Plugin {
 	}
 
 }
+
+new Plugin();
